@@ -1,7 +1,4 @@
-.banner .nav li {
-  @extend .nav-item;
-}
-
-.banner .nav a {
-  @extend .nav-link;
+.header {
+  padding: 23px 0;
+  background: $white;
 }

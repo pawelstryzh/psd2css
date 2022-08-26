@@ -1,0 +1,44 @@
+@import url("https://use.typekit.net/ovz4zcv.css");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: rubik, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 15px;
+  margin: 0;
+}
+
+.container {
+  max-width: 100%;
+  padding: 0 1rem;
+  margin: 0 auto;
+
+  @media (min-width: 575px) {
+    max-width: 540px;
+    padding: 0;
+  }
+
+  @media (min-width: 767px) {
+    max-width: 730px;
+  }
+
+  @media (min-width: 985px) {
+    max-width: 960px;
+  }
+
+  @media (min-width: 1210px) {
+    max-width: 1176px;
+  }
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-slide {
+  height: inherit;
+}

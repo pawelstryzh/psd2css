@@ -9,7 +9,7 @@
     ]
   },
   "publicPath": "/app/themes/psd2css",
-  "devUrl": "http://localhos/psd2css",
+  "devUrl": "http://localhost/psd2css",
   "proxyUrl": "http://localhost:3000",
   "cacheBusting": "[name]_[contenthash]",
   "watch": [

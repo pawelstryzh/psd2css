@@ -1,10 +1,9 @@
-<header class="banner">
+<header class="header">
   <div class="container">
-    <a class="brand" href="{{ home_url('/') }}">{{ get_bloginfo('name', 'display') }}</a>
-    <nav class="nav-primary">
-      @if (has_nav_menu('primary_navigation'))
-        {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}
-      @endif
-    </nav>
+    <a href="{!! get_home_url() !!}"
+       title="{{ get_bloginfo('name', 'display') }}">
+      <img src="{!! get_field('logo', 'option')['url'] !!}"
+           alt="{{ get_bloginfo('name', 'display') }}">
+    </a>
   </div>
 </header>
