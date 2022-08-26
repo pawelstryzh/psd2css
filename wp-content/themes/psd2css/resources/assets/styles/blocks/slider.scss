@@ -1,5 +1,6 @@
 .slider {
   padding: 49px 0 60px;
+  position: relative;
 
   &--bg-blue {
     background: $blue;
@@ -112,6 +113,23 @@
       &:hover {
         background: rgba($white, 0.05);
       }
+    }
+  }
+
+  & + .slider {
+    &::before {
+      content: "";
+      display: block;
+      width: 32px;
+      height: 32px;
+      background: $magenta;
+      border-radius: 100%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      top: 0;
+      transform: translateY(-50%);
     }
   }
 }
